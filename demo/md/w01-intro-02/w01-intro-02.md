@@ -25,5 +25,11 @@ d8b98df apple550678     Sun Sep 21 15:07:55 2025 +0800  W01-P1: Use create-react
 ![](w01-p2-2.png)
 
 ```
-
+b5b3ce0 apple550678     Sun Sep 21 15:28:06 2025 +0800  W01-P2: Use vite to create a new React app
 ```
+
+### W01-logs: git logs of W01 and share to htchung@gms.tku.edu.tw (teacher) and sian-0018 (TA)
+
+![](w01-logs.png)
+
+![](w01-share.png)
