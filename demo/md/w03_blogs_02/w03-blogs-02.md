@@ -11,15 +11,13 @@
 ![](w03-p1-2.png)
 
 ```
+ab61cca apple550678     Wed Oct 1 20:22:26 2025 +0800   Video: W03-P1: Create router in App_xx.jsx--after=2025-09-30
+```
+
+### Video: ### W03-P2: Implement route /static_xx for BlogStaticPage_xx
+
+![](w03-p2.png)
 
 ```
 
-### Video: W02-P2: refine code in W01-P1
-
-#### => Chrome demo use React DevTools
-
-![](w02-p2.png)
-
-```
-da2f0b5 apple550678     Sat Sep 27 18:38:09 2025 +0800  W02-P2: refine code in W01-P1--after=2025-09-26
 ```
