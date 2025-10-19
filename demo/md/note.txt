@@ -1,4 +1,4 @@
 git config --global user.email "apple0974199326@gmail.com"
 git config --global user.name "apple550678"
 
-git log --pretty=format:"%h%x09%an%x09%ad%x09%s"--after="2025-10-12"
+git log --pretty=format:"%h%x09%an%x09%ad%x09%s"--after="2025-10-14"

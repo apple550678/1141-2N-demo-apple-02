@@ -1,0 +1,52 @@
+#!/usr/bin/env node
+
+var myArgs = process.argv.slice(2);
+var cmd = myArgs[0];
+var arg1 = myArgs[1];
+var arg2 = myArgs[2];
+
+
+if(cmd == '--version'){
+    var info = require('../src/info.js');
+    info.version();
+}
+
+if(cmd == 'new'){
+    if(arg1 == undefined){
+        console.log('Please specify a folder name. Ex: static new folder-name');
+        return;
+    }
+    var newCmd = require('../src/new.js');
+    if(arg2 != undefined){
+        template = arg2.replace('--template=', '');
+        newCmd.newProject(arg1, template)
+            .catch(err => {
+                console.error('Failed to create new project:', err);
+                process.exit(1);
+            });
+        return;
+    }
+    newCmd.newProject(arg1)
+        .catch(err => {
+            console.error('Failed to create new project:', err);
+            process.exit(1);
+        });
+}
+
+if(cmd == 'dev'){
+    let url = 'relative';
+    if(arg1 != 'undefined'){
+        url = arg1;
+    }
+    var dev = require('../src/dev.js');
+    dev.start(url);
+}
+
+if(cmd == 'build'){
+    let url = 'relative';
+    if(arg1 != 'undefined'){
+        url = arg1;
+    }
+    var build = require('../src/build.js');
+    build.start(url);
+}
